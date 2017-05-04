@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AvailClasses"
+
+        android:layout_weight="1"
+        android:text = "Classes Available for you"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+    <ListView
+        android:id="@+id/list_of_available_classes"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/Student_Class_Section"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Go To Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GTC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="9dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B2SL"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/Name_of_Student_Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AvailClasses"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Class Name" />
+
+    <EditText
+        android:id="@+id/Student_Class_Section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Name_of_Student_Class"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Class Section" />
+
+
+</RelativeLayout>
+

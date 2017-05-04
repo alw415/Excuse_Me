@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ab1.excuseme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="._opening_screen"
+            android:label="OpeningScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin_login" />
+        <activity android:name=".teacher_login" />
+        <activity android:name=".student_login" />
+        <activity android:name=".admin_register" />
+        <activity android:name=".admin_homepage" />
+        <activity android:name=".teacher_register" />
+        <activity android:name=".student_register" />
+        <activity android:name=".teacher_homepage" />
+        <activity android:name=".student_homepage" />
+        <activity android:name=".admin_view_new_requests" />
+        <activity android:name=".admin_delete_classes" />
+        <activity android:name=".admin_delete_student" />
+        <activity android:name=".student_available_classes" />
+        <activity android:name=".student_feed" />
+        <activity android:name=".teacher_list_of_classes" />
+        <activity android:name=".teacher_create_new_class_request" />
+        <activity android:name=".random_chat_homepage" />
+        <activity android:name=".feed" />
+        <activity android:name=".random_chat_login" />
+        <activity android:name=".student_send_feedback" />
+        <activity android:name=".admin_delete_teacher" />
+        <activity android:name=".teacher_view_feedback" />
+
+    </application>
+
+</manifest>
