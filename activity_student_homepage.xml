@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ab1.excuseme.student_homepage">
+
+    <Button
+        android:id="@+id/Student_Available_Classes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Available Classes"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="78dp"
+        android:layout_below="@+id/Greeting"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Send_Feedback_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="202dp"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/Student_Available_Classes_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Student_Logout_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="320dp"
+        android:layout_below="@+id/Send_Feedback_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
+
+    <TextView
+        android:id="@+id/Greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Hello Student"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/sUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Greeting"
+        android:layout_toEndOf="@+id/Greeting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_toRightOf="@+id/Greeting" />
+</RelativeLayout>

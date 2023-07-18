@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.ab1.excuseme.teacher_create_new_class_request">
+
+    <TextView
+        android:id="@+id/teacherNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sectionNameSubmission"
+        android:layout_marginTop="34dp"
+        android:text="Enter Teacher Name:" />
+
+    <TextView
+        android:id="@+id/sectionNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Section Name:"
+        android:layout_above="@+id/sectionNameSubmission"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/enterClassNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Enter Class Name:" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/classNameSubmission"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/students_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/classNameSubmission"
+        android:layout_marginTop="17dp"
+        android:text="Enter Students Email in a Comma Seaparated List" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sectionNameSubmission"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/create_class_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Class"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/student_email_submission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/students_email"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/teacherNameSubmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_class_bn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
+

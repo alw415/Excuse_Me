@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="New Class Requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:id="@+id/CC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toRightOf="@+id/request_class_name"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CC"
+        android:layout_alignStart="@+id/CC"
+        android:layout_below="@+id/CC"
+        android:layout_marginTop="17dp"
+        android:text="Done" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Class Name"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/request_class_name" />
+
+    <EditText
+        android:id="@+id/request_section_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Section Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/request_class_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/request_section_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/opening_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ab1.excuseme._opening_screen">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="determineUser"
+        android:text="STUDENT"
+        android:layout_above="@+id/random_chat_bn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="51dp" />
+
+    <Button
+        android:text="ADMINISTRATOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:onClick= "determineUser"
+        android:id="@+id/admin_bn" />
+
+    <Button
+        android:text="TEACHER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick= "determineUser"
+        android:id="@+id/teacher_bn"
+        android:layout_below="@+id/admin_bn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/random_chat_bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:onClick="determineUser"
+        android:text="START RANDOM CHAT" />
+
+    <TextView
+        android:text="Welcome to ExcuseME!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/welcome"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+</RelativeLayout>

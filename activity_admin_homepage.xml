@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/view_nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="View New Class Requests" />
+
+    <Button
+        android:text="Delete Classes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:id="@+id/dc"
+        android:layout_below="@+id/view_nr"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Delete Student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/delete_student"
+        android:layout_below="@+id/dc"
+        android:layout_alignRight="@+id/delete_teacher"
+        android:layout_alignEnd="@+id/delete_teacher" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log_out"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <Button
+        android:id="@+id/delete_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="DELETE TEACHER"
+        android:layout_below="@+id/delete_student"
+        android:layout_alignRight="@+id/dc"
+        android:layout_alignEnd="@+id/dc" />
+</RelativeLayout>
